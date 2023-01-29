@@ -7,10 +7,10 @@
 
 import Foundation
 
-class AdviceViewModel {
+class AdviceViewModel: ObservableObject {
     
     // History of advice sessions
-    var sessions: [Session] = []    // empty array to start
+    @Published var sessions: [Session] = []    // empty array to start
     
     // Given a question, provide some advice
     // Library shortcut: Command-Shift-L
